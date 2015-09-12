@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Web Page</title> 
+        <link rel="stylesheet" href="./public/css/style.css" />  
+    </head>
+    <body>
+    
+        <!-- All elements have been given an id attribute -->
+        <!-- To enable us to refer to elements from Javascript -->
+        
+        <p id="myText">Some text on my web page</p>
+        
+        <select id="selColour">
+            <option value="blue">Blue</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        
+        <button id="btnColour">Make It So!</button>
+
+        <!-- block element -->
+        <div id="calculator-container">
+            <!-- block element -->
+            <p id="calculator-heading">My Personal Calculator</p>
+            <div class="calculator">
+                <!-- in-line elements -->
+                <input id="startingValue" placeholder="Starting Value" type="number" /> +
+                <input id="rateValue" placeholder="Rate" type="number" /> %
+            </div>
+            <p class="result-container">
+                Result is: <span id="result"></span>
+            </p>
+        </div>
+
+        <!-- Script tag brings in Javascript into our HTML. -->
+        <!-- Placed here to make sure all referenced --> 
+        <!-- elements have already been defined.     -->
+        <script src="./public/js/script.js"></script>
+        
+    </body>
+</html>
