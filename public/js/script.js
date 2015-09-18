@@ -39,6 +39,13 @@ var executeCalculator =  function(){
 	var result = calculate(startValue, rateValue);
 	//show the result
 	document.getElementById('result').innerHTML = result;
+
+	//used more than once, put it in a variable.
+	var resultContainer = document.getElementById('result-container');
+	resultContainer.style.display = "block";
+	resultContainer.style.borderStyle = "solid";
+	resultContainer.style.borderColor = "red";
+
 }
 
 //referenced in executeCalculator()
